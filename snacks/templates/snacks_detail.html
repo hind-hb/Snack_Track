@@ -4,13 +4,16 @@
 
 {% block content %}
 
-<div >
-    Name: {{snack.name}}
-    <br>
-    Purchaser: {{snack.purchaser}}
-    <br>
-    Description: {{snack.description}}
-</div>
 
+<div class="row">
+    <div class="col-sm-4">
+<ul class="list-group">
+    <li class="list-group-item list-group-item-info">Name: {{snack.name}}</li>
+    <li class="list-group-item list-group-item-info">Purchaser: {{snack.purchaser}}</li>
+    <li class="list-group-item list-group-item-info">Description: {{snack.description}}</li>
+
+  </ul>
+  </div>
+  </div>
 
 {% endblock %}

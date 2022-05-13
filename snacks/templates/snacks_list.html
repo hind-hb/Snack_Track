@@ -5,7 +5,12 @@
 {% block content %}
 
     {% for snack in object_list %}
-    <p><a href="{% url 'snacks_detail' pk=snack.pk %}">{{ snack.name }} - {{ snack.description }}</a></p>
+    <div class="row">
+        <div class="col-sm-4">
+    <ul class="list-group">
+    <li class="list-group-item list-group-item-success"><a href="{% url 'snacks_detail' pk=snack.pk %}">{{ snack.name }} </a></li>
+    </ul>
+</div>
     {% endfor %}
 
 {% endblock content %}
